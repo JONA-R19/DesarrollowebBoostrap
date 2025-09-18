@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #8b0000,
+    #b22222,
+    #d2691e,
+    #ff8c00,
+    #ffd700,
+    #b22222,
+    #8b0000
+  );
+  background-size: 400% 400%;
+  animation: metalFlow 12s ease infinite;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+@keyframes metalFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.portada-carrusel {
+  width: 100vw;         /* Ancho total de la ventana */
+  height: 300px;        /* Altura fija*/
+  overflow: hidden;
+}
+
+.portada-carrusel .carousel-inner,
+.portada-carrusel .carousel-item {
+  height: 100%;
+}
+
+.portada-carrusel .carousel-item img {
+  width: 100%;          /* Ancho completo del contenedor */
+  height: 100%;         /* Altura completa del contenedor */
+  object-fit: cover;    /* La imagen cubre el área sin deformarse */
+  object-position: center; /* Centra la imagen dentro del contenedor */
+}
+
+
+nav{
+   margin: 0;
+  height:8vh;
+  background: linear-gradient(
+    135deg,
+    #8b0000,
+    #b22222,
+    #d2691e,
+    #ff8c00,
+    #ffd700,
+    #b22222,
+    #8b0000
+  );
+  background-size: 400% 400%;
+  animation: metalFlow 12s ease infinite;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+@keyframes metalFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
