@@ -1,0 +1,85 @@
+html, body {
+    height: 100%;             
+    margin: 0;
+}
+
+body {
+    display: flex;            
+    flex-direction: column;
+    background: linear-gradient(135deg, #000000, #0a192f, #112d4e);
+    color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 70px;
+
+}
+
+.navbar {
+    background: linear-gradient(90deg, #000000, #0a192f);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #00aaff !important;
+}
+
+.nav-link {
+    color: #f0f0f0 !important;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #00aaff !important;
+}
+
+#carouselAccion {
+    width: 90%;        
+    margin: auto; 
+    margin-top: 70px;
+}
+
+.carousel-item img {
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card {
+    background: rgba(255, 236, 236, 0.37);
+    backdrop-filter: blur(8px);
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 170, 255, 0.4);
+}
+
+.btn-custom {
+    background: #00aaff;
+    border: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.btn-custom:hover {
+    background: #0088cc;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background: linear-gradient(90deg, #0d1b2a, #1b263b, #000);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;         /* asegura que quede abajo */
+}
