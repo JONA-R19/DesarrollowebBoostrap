@@ -3,20 +3,20 @@ html, body {
 }
 
 body {
-  margin: 0;
-  height: 100vh;
+ display: flex;
+  flex-direction: column;
   background: linear-gradient(135deg,
-      #660101,
-      #9b1515,
-      #c5631d,
-      #ff8c00,
-      #ffd700,
-      #b22222,
-      #8b0000);
+      #000000,
+      #0a192f,
+      #112d4e,
+      #1b263b,
+      #0a192f,
+      #000000);
   background-size: 400% 400%;
-  animation: metalFlow 12s ease infinite;
-  color: white;
-  font-family: Arial, sans-serif;
+  animation: deepFlow 15s ease infinite;
+  color: #f0f0f0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 70px;
 }
 
 @keyframes metalFlow {
@@ -59,20 +59,15 @@ body {
 
 
 nav {
-  margin: 0;
-  height: 8vh;
-  background: linear-gradient(135deg,
-      #8b0000,
-      #b22222,
-      #d2691e,
-      #ff8c00,
-      #ffd700,
-      #b22222,
-      #8b0000);
+ background: linear-gradient(90deg,
+      #000000,
+      #0a192f,
+      #1b263b,
+      #112d4e,
+      #000000);
   background-size: 400% 400%;
-  animation: metalFlow 12s ease infinite;
-  color: white;
-  font-family: Arial, sans-serif;
+  animation: deepFlow 15s ease infinite;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
 }
 
 @keyframes metalFlow {
@@ -93,4 +88,15 @@ nav {
 .card {
   background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente oscuro */
   border: none; /* Opcional: quita el borde blanco */
+}
+
+.grow-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.grow-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 170, 255, 0.4); /* sombra celeste suave */
+  z-index: 10;
 }
